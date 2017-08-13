@@ -1,0 +1,498 @@
+html {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 16px;
+}
+
+/* container */
+.container {
+	max-width: 1600px;
+}
+
+/* header styles */
+.header {
+	width: 100%;
+}
+
+	/* corporate styles */
+	.corp-nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 1rem 1.5rem;
+		height: 2rem;
+		border-bottom: black solid 2px;
+	}
+
+	.corporate {
+		display: flex;
+		align-items: center;
+		height: 1.5rem;
+	}
+
+	/* nav styles */
+	nav {
+		display: flex;
+		align-items: center;
+	}
+
+	nav span {
+		margin-right: 1rem;
+	}
+
+	@media only screen and (min-width: 481px) and (max-width: 1600px)  {
+		/* the mobile nav disappears in the desktop view*/
+		nav.mobile-nav {
+			display: none;
+		}
+	}
+
+
+	/* banner styles */
+	div.banner {
+		padding: 2rem 1.5rem;
+		display: flex;
+		flex-direction: row;
+		background-color: lightgray;
+		border-bottom: black solid 2px;
+	}
+
+	div.banner-img {
+		width: 60%;
+	}
+
+	img.banner-img {
+		width: 100%;
+	}
+
+	div.banner-text {
+		margin-left: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 40%;
+	}
+
+	div.banner-text h1 {
+		font-size: 2.5rem;
+		font-weight: bold;
+		line-height: 1.2;
+		margin: 0 0 1.5rem;
+	}
+
+	div.banner-text h2 {
+		font-size: 1.5rem;
+		font-weight: lighter;
+		line-height: 1.2;
+		margin: 0 0 1.5rem;
+	}
+
+	span.colmar-gray {
+		color: lightgray;
+	}
+
+@media only screen and (max-width: 480px) {
+		/* the corporate nav container containing the logo and mobile nav*/
+		.corp-nav {
+			height: 4rem;
+			display: flex;
+			align-items: center;
+		}
+
+		nav.mobile-nav  {
+			width: 60%;
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		/* the dekstop nav needs to disappear*/
+		nav.desktop-nav, .colmar-black, .colmar-gray {
+			display: none;
+		}
+
+		/* the mobile banner styles*/
+		.container .mobile-banner {
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: lightgrey;
+			border-bottom: black solid 2px;
+		}
+
+		div.mobile-banner-img, img.banner-img {
+			width: 100%
+		}
+
+		div.mobile-banner-text {
+			padding: 2rem 1rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+		}
+	}
+
+/* information style */
+div.information {
+		padding: 2rem 1.5rem;
+		display: flex;
+		flex-direction: row;
+		background-color: white;
+		border-bottom: black solid 2px;
+	}
+
+	/* main information styles */
+	div.main-information {
+		width: 60%;
+	}
+
+	div.main-info-pic-box {
+		width: 100%;
+		margin: 0 0 2rem 0;
+	}
+
+	img.main-info-pic {
+		width: 100%;
+	}
+
+	/* fonts */
+	.main-information h1 {
+		font-size: 1.5rem;
+		font-weight: bold;
+		margin: 0 0 1.5rem 0;
+	}
+
+	.main-information p {
+		line-height: 1.4;
+		font-weight: lighter;
+		font-size: 0.75rem;
+	}
+
+	.main-information span {
+		font-size: 0.5rem;
+	}
+	/* end fonts */
+
+	/* secondary information */
+	div.seconday-information {
+		margin-left: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 40%;
+	}
+
+	div.info-box {
+		padding: 0.5rem;
+		display: flex;
+		align-items: center;
+	}
+
+	div.info-pic-box {
+		width: 35%;
+		float: left;
+		margin-right: 0.5rem;
+	}
+
+	img.info-pic {
+		width: 100%;
+	}
+
+	div.info-text {
+		float: right;
+		width: 65%;
+		line-height: 1.2;
+	}
+
+	/* fonts for info text */
+	div.info-text h2 {
+		font-size: 1.25rem;
+		font-weight: bold;
+	}
+
+	div.info-text p {
+		font-size: 0.75rem;
+	}
+
+	div.info-text a {
+		font-size: 0.75rem;
+		color: lighblue;
+	}
+	/* end fonts */
+
+	div.banner-text button {
+    	background-color: gray; /* Green */
+    	border: none;
+    	color: white;
+    	padding: 1rem 2rem;
+    	width: 80%;
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 1rem;
+	}
+
+	@media only screen and (min-width: 481px) and (max-width: 1600px) {
+		img.mobile-info-pic {
+			display: none;
+		}
+	}
+
+	@media only screen and (max-width: 480px) {
+		/* the main information section disappears in the mobile view */
+		.main-information {
+			display: none;
+		}
+
+		div.information {
+			padding: 1rem;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		/* the secondary information section appears with mobile images */
+		div.seconday-information {
+			margin: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+		}
+
+		div.info-box {
+			margin: 1rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+		}
+
+		/* the desktop image disappears */
+		img.info-pic {
+			display: none;
+		}
+
+		/* the mobile info pic */
+		img.mobile-info-pic {
+			width: 100%;
+		}
+
+		div.info-text {
+			float: left;
+			padding: 1rem;
+			width: 100%;
+			line-height: 1.4;
+		}
+
+		/* fonts for info text */
+		div.info-text h2 {
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+
+		div.info-text p {
+			font-size: 1.25rem;
+		}
+
+		div.info-text a {
+			font-size: 1rem;
+			color: lighblue;
+		}
+	}
+
+/* courses */
+div.courses {
+		padding: 2rem 1.5rem;
+		display: flex;
+		flex-direction: column;
+		background-color: white;
+		border-bottom: black solid 2px;
+	}
+
+	div.courses-container {
+		padding: 2rem 2rem;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	div.course-box {
+		width: 30%;
+		border: black solid 1px;
+	}
+
+	div.course-pic-box {
+		width: 100%;
+	}
+
+	div.course-pic img {
+		width: 100%;
+	}
+
+	div.course-text {
+		padding: 1rem 0 1.5rem 1rem;
+		line-height: 1.2;
+	}
+
+	/* fonts for courses */
+	.title {
+		text-align: center;
+		margin-top: 2rem;
+		font-size: 2.5rem;
+		font-weight: bold;
+	}
+
+	div.course-text h3 {
+		font-size: 1.25rem;
+		font-weight: bold;
+	}
+
+	div.course-text p {
+		margin: 0.5rem 0 0.5rem 0;
+		font-weight: lighter;
+	}
+	/* end of fonts for courses */
+
+	@media only screen and (max-width: 480px) {
+		div.courses-container {
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		div.course-box {
+			width: 100%;
+			border: none;
+			background-color: lightgrey;
+			margin-bottom: 0.5rem;
+		}
+
+		div.course-pic-box {
+			display: none;
+		}
+
+		div.course-pic img {
+			display: none;
+		}
+
+		div.course-text p {
+			display: none;
+		}
+
+		/* fonts for courses */
+		.title {
+			text-align: center;
+			margin: 2rem 0 1rem 0;
+			font-size: 2.5rem;
+			font-weight: bold;
+		}
+	}
+
+/* thesis section */
+div.thesis {
+		padding: 2rem 1.5rem;
+		display: flex;
+		flex-direction: column;
+		background-color: lightgray;
+		border-bottom: black solid 2px;
+	}
+
+	div.thesis-work {
+		display: flex;
+		width: 100%;
+	}
+
+	div.video-box {
+		width: 60%
+	}
+
+	div.video-media-box {
+		width: 100%;
+		margin: 0 0 2rem 0;
+	}
+
+	div.video-media-box video {
+		width: 100%;
+	}
+
+	/* other work*/
+	div.other-work {
+		margin-left: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		width: 40%;
+	}
+
+	div.thesis-box {
+		border: black solid 1px;
+		padding: 0.5rem;
+		display: flex;
+		align-items: center;
+	}
+
+	div.thesis-pic {
+		width: 35%;
+		float: left;
+		margin-right: 0.5rem;
+	}
+
+	div.thesis-pic img {
+		width: 100%;
+	}
+
+	div.thesis-text {
+		float: right;
+		width: 65%;
+		line-height: 1.2;
+	}
+
+	/* fonts for info text */
+	div.thesis-text h2 {
+		font-size: 1.25rem;
+		font-weight: bold;
+	}
+
+	div.thesis-text p {
+		font-size: 0.75rem;
+	}
+
+	div.thesis-text a {
+		font-size: 0.75rem;
+		color: lighblue;
+	}
+
+	@media only screen and (max-width: 480px) {
+		div.thesis {
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			background-color: lightgray;
+			border-bottom: black solid 2px;
+		}
+
+		.title {
+			text-align: center;
+			margin: 2rem 0 1rem 0;
+			font-size: 2.5rem;
+			font-weight: bold;
+		}
+
+		div.video-box {
+			width: 100%
+		}
+
+		div.other-work, div.video-box h3, div.video-box p {
+			display: none;
+		}
+	}
+
+/* footer */
+footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 1.5rem 2rem 1.5rem;
+}
